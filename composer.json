@@ -1,0 +1,41 @@
+{
+    "name": "tbmatuka/websocket-notify-bundle",
+    "description": "Symfony bundle for websocket-notify",
+    "homepage": "https://github.com/tbmatuka/websocket-notify-bundle",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tin Benjamin Matuka",
+            "homepage": "https://tbmatuka.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/tbmatuka/websocket-notify-bundle/issues",
+        "source": "https://github.com/tbmatuka/websocket-notify-bundle"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tbmatuka\\WebsocketNotifyBundle\\": "src"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "symfony/config": "^6.0|^7.0",
+        "symfony/dependency-injection": "^6.0|^7.0",
+        "symfony/framework-bundle": "^6.0|^7.0",
+        "symfony/http-foundation": "^6.0|^7.0",
+        "symfony/http-kernel": "^6.4|^7.0",
+        "symfony/options-resolver": "^6.0|^7.0",
+        "symfony/property-access": "^6.0|^7.0"
+    },
+    "require-dev": {
+      "roave/security-advisories": "dev-latest",
+      "friendsofphp/php-cs-fixer": "^v3.62.0"
+    },
+    "scripts": {
+        "cs-fixer": "vendor/bin/php-cs-fixer fix -v --dry-run",
+        "cs-fixer-fix": "vendor/bin/php-cs-fixer fix -v"
+    }
+}
